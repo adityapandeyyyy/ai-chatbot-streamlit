@@ -29,10 +29,9 @@ genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 # Create Embeddings
 # -----------------------------
 embeddings = GoogleGenerativeAIEmbeddings(
-    model="models/embedding-001",
+    model="models/text-embedding-004",
     google_api_key=st.secrets["GOOGLE_API_KEY"]
 )
-
 # -----------------------------
 # Create Vector Database
 # -----------------------------
@@ -77,4 +76,5 @@ QUESTION:
 
     st.write("Answer")
     st.write(response.text)
+
 
