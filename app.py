@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import google.generativeai as genai
 
-from langchain.schema import Document
+from langchain_core.documents import Document
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import FAISS
 
@@ -77,3 +77,4 @@ QUESTION:
 
     st.write("Answer")
     st.write(response.text)
+
